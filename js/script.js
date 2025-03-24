@@ -6,14 +6,16 @@
 
 "use strict"
 
-function calculateAreaOfTriangle () {
+function calculatesalary () {
   // input
-  const baselength = parseFloat(document.getElementById('hours-worked').value)
-  const heightlength = parseFloat(document.getElementById('hourly-wage').value)
+  const hoursworked = parseFloat(document.getElementById('hours-worked').value)
+  const hourlywage = parseFloat(document.getElementById('hourly-wage').value)
 
   // process
-  const areaOfTriangle = (baselength * heightlength) / 2
+  const weeklypay = (hoursworked * hourlywage) * (1.00 * 0.18)
+  const incometax = (hoursworked * hourlywage) * 0.18
 
   // output
-  document.getElementById('area').innerHTML = 'Area of triangle is: ' + areaOfTriangle + ' cm²'
-}
+  document.getElementById('weelkypay').innerHTML = `Your pay will be: $ ${weeklypay.toFixed(2)}`
+  document.getElementById('incometax').innerHTML = 'The government will take: $' + incometax.toFixed(2)
+  }
