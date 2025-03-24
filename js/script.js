@@ -8,8 +8,8 @@
 
 function calculateAreaOfTriangle () {
   // input
-  const baselength = parseInt(document.getElementById('base-length').value)
-  const heightlength = parseInt(document.getElementById('height-length').value)
+  const baselength = parseFloat(document.getElementById('hours-worked').value)
+  const heightlength = parseFloat(document.getElementById('hourly-wage').value)
 
   // process
   const areaOfTriangle = (baselength * heightlength) / 2
