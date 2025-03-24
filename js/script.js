@@ -16,6 +16,6 @@ function calculatesalary () {
   const incometax = (hoursworked * hourlywage) * 0.18
 
   // output
-  document.getElementById('weelkypay').innerHTML = `Your pay will be: $ ${weeklypay.toFixed(2)}`
+  document.getElementById('weeklpay').innerHTML = `Your pay will be: $ ${weeklypay.toFixed(2)}`
   document.getElementById('incometax').innerHTML = 'The government will take: $' + incometax.toFixed(2)
   }
